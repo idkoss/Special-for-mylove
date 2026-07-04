@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Wishes - Mira</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+
+    <link rel="icon" href="WhatsApp Image 2026-07-02 at 20.39.58.jpeg" type="image/x-icon">
+</head>
+<body>
+  <div id="loading" aria-label="Loading">
+    <div class="loader-card">
+      <div class="loader-bloom" aria-hidden="true"></div>
+      <div class="loader-text">Loading wishes…</div>
+    </div>
+  </div>
+
+  <canvas id="bgParticles" aria-hidden="true"></canvas>
+  <div id="floatingHearts" aria-hidden="true"></div>
+
+  <header class="navbar">
+    <div class="nav-inner">
+      <a class="brand" href="index.html" aria-label="Home">
+        <span class="brand-dot" aria-hidden="true"></span>
+        <span>Mira</span>
+      </a>
+
+      <nav class="nav-links" aria-label="Main navigation">
+        <a href="gallery.html">Pictures</a>
+        <a href="memories.html">Memories</a>
+        <a class="active" href="wishes.html">Wishes</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="page">
+    <section class="page-head">
+      <div class="page-glass">
+        <div class="page-kicker">Wishes</div>
+        <h2 class="page-title">A message just for you</h2>
+        <p class="page-subtitle">Kalau semisal kamu langsung buka Pictcures teruss bukaa ini terakhir, harusnyaa buka ini duluu sii hahahhahahaha tapi gapapa.</p>
+      </div>
+    </section>
+
+    <section class="wish-card">
+      <div class="wish-typing">
+        <span class="wish-typing-label">&mdash; </span>
+        <span id="typingText" class="typing"></span>
+        <span class="typing-cursor" aria-hidden="true">▍</span>
+      </div>
+
+      <pre class="wish-pre" aria-label="Birthday message">
+"Happy Birthday, Mira.
+
+happy level up day my lovee!!! make a wish for u b'day, tahun ini umur kamu bertambah satu tahun semoga kamu sehat, kamuu sekarangg makin dewasa, semogaa apapunnn yang kamu capaii akaann tercapaii tahunn ini yaa sayaangg. akuu sangatt amatt berterimakasihh kepada kamuu untuk selamaa ini banyak hal yang kamuu ajarinn ke akuu, dan akuu jugaa berterimakasihh karena telahh menerima aku di hidup kamu, akuu jugaa sekalii lagii terimakasih karena kehadiran kamu dihidup aku sangatt berartii buat aku dan kamuu jugaa mengajarkan aku untukk berfikir untuk kedepannya dan bisa buaat aku berfikir lebih dewasa. masih banyakk hal yang haruss kamu laluin lagi kedepannya dan akuu sangat amat berharap bisa terus menemani kamu untuk kehidupan kamu kedepannya yaa sayaangg, i know u had so many struggle but i'm so proud of u karena kamu bisa melalui ini semuaa, dannn semogaa di usia 20 ini kamu bisa mengurangi semua insecure kamuu yaa sayaangg, kamuu ituu cantikk, kamu itu baik, u deserve to get all my effort so stop thinking it's all a bother to me because u deserve it, n i hope we can grow together, semoga hubungan ini bisa kita laluin barengg barengg jugaa yaa sayangg, karena setiap kita ada masalah itu semua bisa kita omongin dan kita cari jalan keluarnyaa barengg barengg, dan ituu yangg membuat kita saling mengerti, akuu gatauu lagii mauu ngomongg gimana, tapii akuu akan selaluu support kamu disituasi apapun itu sayaangg, and u have to remember this, i can be your home when u had a struggle, feel sad, feel unworthy, and feel happy or somethin else, i wishh u all the bestt my love. "Keep me as your finish line"
+
+I Love Youuu More Thann Anything
+-Idki
+
+
+Have a wonderful birthday for you my love."
+      </pre>
+
+      <div class="wish-controls" aria-label="Quick actions">
+        <div class="music-controls">
+          <button class="btn btn-ghost" id="playMusic" type="button">Play Music</button>
+          <button class="btn btn-ghost" id="pauseMusic" type="button">Pause Music</button>
+        </div>
+        <a class="btn btn-primary" href="gallery.html">Revisit Pictures</a>
+      </div>
+    </section>
+
+    <button id="backToTop" class="back-to-top" type="button" aria-label="Back to top">↑</button>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">Made with<span class="heart">❤</span> for Mira</div>
+  </footer>
+
+  <audio id="bgMusic" preload="auto" loop>
+    <!-- Musik placeholder (mudah diganti) -->
+    <source src="videoplayback.m4a" type="audio/mpeg" />
+  </audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
+

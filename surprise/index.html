@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Happy Birthday Mira</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+
+    <link rel="icon" href="WhatsApp Image 2026-07-02 at 20.39.58.jpeg" type="image/x-icon">
+</head>
+<body>
+  <!-- Loading Screen -->
+  <div id="loading" aria-label="Loading">
+    <div class="loader-card">
+      <div class="loader-bloom" aria-hidden="true"></div>
+      <div class="loader-text">Preparing your surprise…</div>
+    </div>
+  </div>
+
+  <!-- Background decorations (particles & hearts) -->
+  <canvas id="bgParticles" aria-hidden="true"></canvas>
+  <div id="floatingHearts" aria-hidden="true"></div>
+
+  <!-- Sticky Navbar -->
+  <header class="navbar">
+    <div class="nav-inner">
+      <a class="brand" href="index.html" aria-label="Home">
+        <span class="brand-dot" aria-hidden="true"></span>
+        <span>Mira</span>
+      </a>
+
+      <nav class="nav-links" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="gallery.html">Pictures</a>
+        <a href="memories.html">Memories</a>
+        <a href="wishes.html">Wishes</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-glass">
+        <div class="hero-kicker">Birthday Surprise</div>
+        <h1 class="hero-title" aria-label="Happy Birthday Mira">Happy Birthday <span class="name">Mira</span></h1>
+        <p class="hero-subtitle">A little surprise made especially for you.</p>
+            <head>
+                <link rel="icon" href="WhatsApp Image 2026-07-02 at 20.39.58.jpeg" type="image/x-icon">
+            </head>
+        <div class="hero-actions">
+          <button id="openSurprise" class="btn btn-primary" type="button" aria-label="Open Surprise">
+            Open Surprise
+          </button>
+          <a class="btn btn-ghost" href="gallery.html" aria-label="Go to Gallery">View Pictures</a>
+        </div>
+
+        <div class="hero-hint" aria-hidden="true">
+          <span class="hint-badge">From Idki</span>
+          <span class="hint-line"></span>
+        </div>
+      </div>
+
+      <!-- soft floating flowers -->
+      <div class="hero-floating" aria-hidden="true">
+        <span class="petal p1"></span>
+        <span class="petal p2"></span>
+        <span class="petal p3"></span>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-inner">Made with <span class="heart">❤</span> for Mira</div>
+  </footer>
+
+  <!-- Modal / Surprise Reveal -->
+  <div id="surpriseModal" class="modal" role="dialog" aria-modal="true" aria-label="Surprise">
+    <div class="modal-backdrop" data-close></div>
+    <div class="modal-content" role="document">
+      <div class="modal-header">
+        <div class="modal-title">Ready, Mira?</div>
+        <button class="icon-btn" data-close aria-label="Close">
+          ✕
+        </button>
+      </div>
+      <div class="modal-body">
+        <p class="modal-copy">Tap to continue the surprise.</p>
+        <div class="modal-grid">
+          <a class="card-link" href="gallery.html">
+            <div class="card-link-icon">📸</div>
+            <div>
+              <div class="card-link-title">Pictures</div>
+              <div class="card-link-sub">Aesthetic moments</div>
+            </div>
+          </a>
+          <a class="card-link" href="memories.html">
+            <div class="card-link-icon">🕊️</div>
+            <div>
+              <div class="card-link-title">Memories</div>
+              <div class="card-link-sub">Our timeline</div>
+            </div>
+          </a>
+          <a class="card-link" href="wishes.html">
+            <div class="card-link-icon">💌</div>
+            <div>
+              <div class="card-link-title">Wishes</div>
+              <div class="card-link-sub">Birthday message</div>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-primary" type="button" data-close-open="gallery">Start</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+

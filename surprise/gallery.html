@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pictures - Mira</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+
+    <link rel="icon" href="WhatsApp Image 2026-07-02 at 20.39.58.jpeg" type="image/x-icon">
+</head>
+<body>
+  <div id="loading" aria-label="Loading">
+    <div class="loader-card">
+      <div class="loader-bloom" aria-hidden="true"></div>
+      <div class="loader-text">Loading pictures…</div>
+    </div>
+  </div>
+
+  <canvas id="bgParticles" aria-hidden="true"></canvas>
+  <div id="floatingHearts" aria-hidden="true"></div>
+
+  <header class="navbar">
+    <div class="nav-inner">
+      <a class="brand" href="index.html" aria-label="Home">
+        <span class="brand-dot" aria-hidden="true"></span>
+        <span>Mira</span>
+      </a>
+
+      <nav class="nav-links" aria-label="Main navigation">
+        <a class="active" href="gallery.html">Pictures</a>
+        <a href="memories.html">Memories</a>
+        <a href="wishes.html">Wishes</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="page">
+    <section class="page-head">
+      <div class="page-glass">
+        <div class="page-kicker">Pictures</div>
+        <h2 class="page-title">A Little Moment of Us</h2>
+        <p class="page-subtitle">setiap momen kecil bersamamu</p>
+      </div>
+    </section>
+
+    <section class="gallery" aria-label="Photo gallery">
+      <div class="gallery-grid">
+        <!-- Foto placeholder (mudah diganti) -->
+        <button class="photo" type="button" data-full="WhatsApp Image 2026-07-02 at 01.06.53.jpeg" aria-label="Open photo 1">
+          <img src="WhatsApp Image 2026-07-02 at 01.06.53.jpeg" alt="first meet" loading="lazy" />
+        </button>
+        <button class="photo" type="button" data-full="WhatsApp Image 2026-07-02 at 01.06.54 (1).jpeg" aria-label="Open photo 2">
+          <img src="WhatsApp Image 2026-07-02 at 01.06.54 (1).jpeg" alt="Photo 2" loading="lazy" />
+        </button>
+        <button class="photo" type="button" data-full="WhatsApp Image 2026-07-02 at 01.06.54.jpeg" aria-label="Open photo 3">
+          <img src="WhatsApp Image 2026-07-02 at 01.06.54.jpeg" alt="Photo 3" loading="lazy" />
+        </button>
+        <button class="photo" type="button" data-full="WhatsApp Image 2026-07-02 at 01.06.55.jpeg" aria-label="Open photo 4">
+          <img src="WhatsApp Image 2026-07-02 at 01.06.55.jpeg" alt="Photo 4" loading="lazy" />
+        </button>
+        <button class="photo" type="button" data-full="WhatsApp Image 2026-07-02 at 01.06.56 (1).jpeg" aria-label="Open photo 5">
+          <img src="WhatsApp Image 2026-07-02 at 01.06.56 (1).jpeg" alt="Photo 5" loading="lazy" />
+        </button>
+        <button class="photo" type="button" data-full="WhatsApp Image 2026-07-02 at 01.06.56.jpeg" aria-label="Open photo 6">
+          <img src="WhatsApp Image 2026-07-02 at 01.06.56.jpeg" alt="Photo 6" loading="lazy" />
+        </button>
+        <button class="photo" type="button" data-full="WhatsApp Image 2026-07-02 at 01.06.57.jpeg" aria-label="Open photo 7">
+          <img src="WhatsApp Image 2026-07-02 at 01.06.57.jpeg" alt="Photo 7" loading="lazy" />
+        </button>
+        <button class="photo" type="button" data-full="WhatsApp Image 2026-07-02 at 01.06.58.jpeg" aria-label="Open photo 8">
+          <img src="WhatsApp Image 2026-07-02 at 01.06.58.jpeg" alt="Photo 8" loading="lazy" />
+        </button>
+        <button class="photo" type="button" data-full="WhatsApp Image 2026-07-02 at 01.06.59.jpeg" aria-label="Open photo 8">
+          <img src="WhatsApp Image 2026-07-02 at 01.06.59.jpeg" alt="Photo 8" loading="lazy" />
+        </button>
+        <button class="photo" type="button" data-full="WhatsApp Image 2026-07-02 at 01.07.00.jpeg" aria-label="Open photo 8">
+          <img src="WhatsApp Image 2026-07-02 at 01.07.00.jpeg" alt="Photo 8" loading="lazy" />
+        </button>
+        <button class="photo" type="button" data-full="WhatsApp Image 2026-07-02 at 01.07.01.jpeg" aria-label="Open photo 8">
+          <img src="WhatsApp Image 2026-07-02 at 01.07.01.jpeg" alt="Photo 8" loading="lazy" />
+        </button>
+        <button class="photo" type="button" data-full="WhatsApp Image 2026-07-02 at 01.07.01 (1).jpeg" aria-label="Open photo 8">
+          <img src="WhatsApp Image 2026-07-02 at 01.07.01 (1).jpeg" alt="Photo 8" loading="lazy" />
+        </button>
+        <button class="photo" type="button" data-full="WhatsApp Image 2026-07-02 at 01.07.02.jpeg" aria-label="Open photo 8">
+          <img src="WhatsApp Image 2026-07-02 at 01.07.02.jpeg" alt="Photo 8" loading="lazy" />
+        </button>
+        <button class="photo" type="button" data-full="WhatsApp Image 2026-07-02 at 01.07.03 (1).jpeg" aria-label="Open photo 8">
+          <img src="WhatsApp Image 2026-07-02 at 01.07.03 (1).jpeg" alt="Photo 8" loading="lazy" />
+        </button>
+        <button class="photo" type="button" data-full="WhatsApp Image 2026-07-02 at 01.07.03.jpeg" aria-label="Open photo 8">
+          <img src="WhatsApp Image 2026-07-02 at 01.07.03.jpeg" alt="Photo 8" loading="lazy" />
+        </button>
+        <button class="photo" type="button" data-full="WhatsApp Image 2026-07-02 at 01.07.04.jpeg" aria-label="Open photo 8">
+          <img src="WhatsApp Image 2026-07-02 at 01.07.04.jpeg" alt="Photo 8" loading="lazy" />
+        </button>
+        <button class="photo" type="button" data-full="WhatsApp Image 2026-07-02 at 01.07.05.jpeg" aria-label="Open photo 8">
+          <img src="WhatsApp Image 2026-07-02 at 01.07.05.jpeg" alt="Photo 8" loading="lazy" />
+        </button>
+        <button class="photo" type="button" data-full="WhatsApp Image 2026-07-02 at 01.07.06.jpeg" aria-label="Open photo 8">
+          <img src="WhatsApp Image 2026-07-02 at 01.07.06.jpeg" alt="Photo 8" loading="lazy" />
+        </button>
+        <button class="photo" type="button" data-full="WhatsApp Image 2026-07-02 at 01.07.07.jpeg" aria-label="Open photo 8">
+          <img src="WhatsApp Image 2026-07-02 at 01.07.07.jpeg" alt="Photo 8" loading="lazy" />
+        </button>
+        <button class="photo" type="button" data-full="WhatsApp Image 2026-07-02 at 01.07.09.jpeg" aria-label="Open photo 8">
+          <img src="WhatsApp Image 2026-07-02 at 01.07.09.jpeg" alt="Photo 8" loading="lazy" />
+        </button>
+      </div>
+    </section>
+
+    <button id="backToTop" class="back-to-top" type="button" aria-label="Back to top">↑</button>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">Made with <span class="heart">❤</span> for Mira</div>
+  </footer>
+
+  <!-- Fullscreen modal -->
+  <div id="imageModal" class="img-modal" role="dialog" aria-modal="true" aria-label="Fullscreen image">
+    <div class="img-modal-backdrop" data-close-modal></div>
+    <div class="img-modal-content" role="document">
+      <button class="icon-btn" data-close-modal aria-label="Close image">✕</button>
+      <img id="modalImg" alt="Fullscreen" />
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
